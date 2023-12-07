@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:ital,wght@0,700;1,400&display=swap');
+body{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    background-color:  hsl(234, 29%, 20%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: roboto
+}
+.conteiner{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 30px;
+    border-radius: 10px
+}
+
+
+.lado1 h2{
+    color: hsl(234, 29%, 20%) ;
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0
+}
+.lado1 p{
+    color: hsl(235, 18%, 26%) ;
+    line-height: 20px;
+    font-size: 16px ;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+.soanCircle{
+    display: flex;
+    margin-bottom: 15px
+}
+.soanCircle span{
+    margin-left: 12px ;
+    color: hsl(235, 18%, 26%) ;
+    line-height: 20px;
+    font-size: 16px ;
+    font-weight: 200;
+}
+.lado1 form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px
+}
+.lado1 > form > .email_error{
+    font-size: 14px;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.error{
+    color: hsl(4, 100%, 67%); 
+    display: none
+}
+.errorTs{
+    display: inline
+}
+.inputEmail{
+    outline: 0;
+    width: 100% ;
+    margin-bottom: 10px;
+    border: 1px solid hsl(231, 7%, 60%) ;
+    border-radius: 10px;
+    padding: 15px ;
+    width: 300px ;
+    font-size: 15px;
+    color: hsl(231, 7%, 60%) ;
+    margin-bottom: 20px;
+}
+.inputEmailError{
+    outline: 0;
+    width: 100% ;
+    margin-bottom: 10px;
+    border: 1px solid hsl(231, 7%, 60%) ;
+    border-radius: 10px;
+    padding: 15px ;
+    width: 300px ;
+    font-size: 15px;
+    color: hsl(4, 100%, 67% ) ;
+    margin-bottom: 20px;
+    background-color: #FEE9E7;
+}
+form > label > input::placeholder{
+    font-size: 15px;
+    color: hsl(231, 7%, 60%)
+}
+form button{
+    width: 330px;
+    border: 0 ;
+    background-color: hsl(234, 29%, 20%) ;
+    padding: 15px ;
+    color: #fff ;
+    font-size: 14px ;
+    border-radius: 5px
+}
+form button:hover{
+    background: linear-gradient(45deg , #FF527B , #FF6A3A  );
+}
+.lado2 img{
+    object-fit: contain;
+    max-height: 430px;
+    padding-left: 50px;
+    
+}
+
+@media (max-width: 45.8750rem){
+    body{
+        background-color: #fff;
+    }
+    .conteiner{
+        flex-direction: column;
+        padding: 0;
+    }
+    .lado1{
+        order: 2;
+        padding: 0 25px
+    }
+    .lado2{
+        order: 1 ; 
+        position: relative;
+    }
+    .lado2 img{
+        padding: 0;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 450px){
+
+    .lado2 img{
+        width: 100vw ;
+        padding: 0;
+        margin-bottom: 40px;
+        max-height:none;
+    }
+}
